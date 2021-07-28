@@ -24,5 +24,11 @@ def get_json_data(response):
 
 
 def post_data(relative_path, iss='25544'):
+    """
+
+    :param relative_path: endpoint of the url to be tested
+    :param iss: by default set to iss, but user can pass other values to check negative tests
+    :return: return response received from hitting a POST request
+    """
     data = requests.post(env.URL + iss + '/' + relative_path)
     return data

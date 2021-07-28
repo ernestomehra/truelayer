@@ -6,10 +6,9 @@ import pytest
 
 class TestPositions:
     """
-    Test suite for checking the API endpoint: satellites/[id/positions
+    Test suite for sanity testing the API endpoint: satellites/[id]/positions
     - Tier 1: tag to run only the critical tests
     - Tier 2: tag to run critical and high priority tests
-    - Tier 3: tag to run all tests including lowest priority tests.
     """
 
     @pytest.mark.tier1
@@ -25,7 +24,6 @@ class TestPositions:
     def test_positions_allowed_methods(self):
         pass
 
-    @pytest.mark.tier3
     def test_positions_disallowed_methods(self):
         pass
 
@@ -35,22 +33,32 @@ class TestPositions:
     def test_positions_valid_timestamp(self):
         pass
 
+    # Negative epoch timestamp
     def test_positions_invalid_timestamp(self):
         pass
 
+    # Boundary value analysis
     def test_positions_one_timestamp(self):
         pass
 
+    # Boundary value analysis
     def test_positions_ten_timestamps(self):
         pass
 
+    # Boundary value analysis
     def test_positions_eleven_timestamps(self):
         pass
 
     def test_positions_timestamp_custom_timezone(self):
         pass
 
-    def test_positions_(self):
+    def test_positions_past_timestamp(self):
+        pass
+
+    def test_positions_future_timestamp(self):
+        pass
+
+    def test_positions_invalid_iss_id(self):
         pass
 
     def test_positions_default_unit(self):
@@ -58,6 +66,7 @@ class TestPositions:
 
     def test_positions_custom_unit(self):
         pass
+
 
 
 

@@ -1,4 +1,4 @@
 class TestEnvironment:
 
-    URL = "https://wheretheiss.at/w/developer"
+    URL = "https://api.wheretheiss.at/v1/satellites/"
 

@@ -11,6 +11,8 @@ class TestPositions:
     - Tier 2: tag to run critical and high priority tests
     """
 
+    endpoint = "positions"
+
     @pytest.mark.tier1
     @pytest.mark.tier2
     def test_sat_positions_response(self):

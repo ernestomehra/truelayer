@@ -11,3 +11,10 @@ params_tles = {
         "format": ''
     }
 }
+
+
+params_positions = {
+    "valid_timestamp": {
+        "1627496882"
+    }
+}

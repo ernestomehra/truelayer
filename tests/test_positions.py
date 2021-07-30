@@ -1,5 +1,5 @@
-from src.data.satellite_info import satellites
-from src.helpers.utils import get_json_data
+from src.data.params import params_positions
+from src.helpers.utils import *
 from src.helpers.environment import TestEnvironment as env
 import pytest
 
@@ -16,11 +16,35 @@ class TestPositions:
     @pytest.mark.tier1
     @pytest.mark.tier2
     def test_sat_positions_response(self):
-        pass
+        response = get_data(env.URL, params=params_positions["valid_timestamp"])
+        json_response = get_json_data(response)
+        assert response.status_code == 200
+        result = []
+        expected_keys = [
+                            "name",
+                            "id",
+                            "latitude",
+                            "longitude",
+                            "altitude",
+                            "velocity",
+                            "visibility",
+                            "footprint",
+                            "timestamp",
+                            "daynum",
+                            "solar_lat",
+                            "solar_lon",
+                            "units"
+                        ]
+        for key in json_response:
+            result.append(key)
+        assert sorted(result) == sorted(expected_keys), 'Actual API Response does not match the expected API response'
 
     @pytest.mark.tier1
     def test_positions_response_headers(self):
-        pass
+        response = get_data(env.URL, params=params_positions["valid_timestamp"])
+        assert response.status_code == 200
+
+        
 
     @pytest.mark.tier2
     def test_positions_allowed_methods(self):

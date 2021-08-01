@@ -4,8 +4,8 @@
 
 This test automation suite, is created using pytest framework to automate APIs: 
 
-- https://api.wheretheiss.at/v1/satellites/<id>positions
-- https://api.wheretheiss.at/v1/satellites/<id>tle
+- `https://api.wheretheiss.at/v1/satellites/<id>/positions`
+- `https://api.wheretheiss.at/v1/satellites/<id>/tle`
 
 ## How to setup locally and run tests? 
 Pre-Requisites:

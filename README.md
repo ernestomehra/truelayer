@@ -21,7 +21,8 @@ Steps:
 - Install dependencies: `pip install -r requirements.txt`
 - In the terminal, run command `pytest -s` to run all tests in side the `test/` dir 
 
-Note: To create an HTML report for every test run, run `pytest --html=report-html`
+Note: To create an HTML report for every test run, run `pytest --html=report-html` I have committed an example 
+report.html, this should not be committed to the repo on a live project, only here for the demo purpose.
 
 ### Custom Test Suites:
 

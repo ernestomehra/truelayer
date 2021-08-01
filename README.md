@@ -4,8 +4,8 @@
 
 This test automation suite, is created using pytest framework to automate APIs: 
 
-- https://api.wheretheiss.at/v1/satellites/<id>/positions
-- https://api.wheretheiss.at/v1/satellites/<id>/tle
+- https://api.wheretheiss.at/v1/satellites/<id>//positions
+- https://api.wheretheiss.at/v1/satellites/<id>//tle
 
 ## How to setup locally and run tests? 
 Pre-Requisites:
@@ -23,13 +23,12 @@ Steps:
 
 Note: To create an HTML report for every test run, run `pytest --html=report-html`
 
-###Custom Test Suites:
+### Custom Test Suites:
 
 To run custom test classes, simply run pytest <path to the testfile.py> For eg: pytest tests/test_positions.py would 
 run test classes inside this file only.
 
-##Issues found while working with the API endpoints: 
-
+## Issues found while working with the API endpoints:
 
 1. No documented detail around the timestamp timezone - it is GMT, found by watching the headers returned/hit and trial.
 2. Time Zones are not easy to decode; these are epoch times.

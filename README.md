@@ -46,3 +46,10 @@ more than 10 i.e. 20 timestamps as well. So, this test will explicitly fail in m
 
 5. Suppose, the timestamp is set at 0.90 , the result is returned for the timestamp 0, although I think it should be 
 rounded off to 1. 
+   
+   
+## Future Enhancements for the framework
+   
+1. Implement a more interactive, data-driven reporting approach.
+2. Implement markers for the individual tests, that will help execution for smoke, sanity and regression tests.
+3. Implement performance testing for both the API endpoints, using an open source tool like blazemeter or locus.py

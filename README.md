@@ -47,7 +47,9 @@ more than 10 i.e. 20 timestamps as well. So, this test will explicitly fail in m
 5. Suppose, the timestamp is set at 0.90 , the result is returned for the timestamp 0, although I think it should be 
 rounded off to 1. 
    
-   
+## Task 2: Pending based on latest discussion with Craig. 
+TBD - 19/08/2021   
+
 ## Future Enhancements for the framework
    
 1. Implement a more interactive, data-driven reporting approach.

@@ -53,7 +53,9 @@ rounded off to 1.
    
 Identify list of gaps in processes, testing strategy that can lead to quality compromises on the product. The pdf file containing these points, `Truelayer QA task - Part 2` can be found under qa_processes directory for review.
 
-## Future Enhancements for the framework
+   
+   
+#### Future Enhancements for the framework
    
 1. Implement a more interactive, data-driven reporting approach.
 2. Implement markers for the individual tests, that will help execution for smoke, sanity and regression tests.

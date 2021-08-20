@@ -48,7 +48,7 @@ more than 10 i.e. 20 timestamps as well. So, this test will explicitly fail in m
 rounded off to 1. 
    
 ## Task 2: Pending based on latest discussion with Craig. 
-TBD - 19/08/2021   
+The pdf file, `Truelayer QA task - Part 2` can be found under qa_processes directory for review.
 
 ## Future Enhancements for the framework
    
